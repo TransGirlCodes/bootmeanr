@@ -1,0 +1,39 @@
+Data to be summarized:
+1 2 3 4 5 6 7 8 9 10 10 5 6 7 8 3 4 8 2 6 8 2
+
+
+Summary of data:
+
+Min: 1
+1st Q: 3.25
+Median: 6
+Mean: 5.636
+3rd Q: 8
+Max: 10
+
+
+Bootstrap info:
+
+ORDINARY NONPARAMETRIC BOOTSTRAP
+
+
+Call:
+boot(data = colData, statistic = meanFun, R = args$reps)
+
+
+Bootstrap Statistics :
+    original     bias    std. error
+t1* 5.636364 0.02972727   0.5791855
+
+
+Bootstrap 95% bonfidence interval for mean:
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = b, type = "bca")
+
+Intervals : 
+Level       BCa          
+95%   ( 4.409,  6.682 )  
+Calculations and Intervals on Original Scale
